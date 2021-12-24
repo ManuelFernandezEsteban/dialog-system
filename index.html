@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/7715a316f7.js" crossorigin="anonymous"></script>
+    <title>Dialog design system</title>
+</head>
+
+<body onload="init()">
+    <div class="wrap">
+        <div class="botonera">            
+            <input id="success" type="button" value="succes">
+            <input id="warn" type="button" value="warn" >
+            <input id="error" type="button" value="error">
+        </div>
+       
+        <div class="wrap-dialog">
+            <article id="boxWarn" class="box hide">
+                <div class="close">
+                    <div class="boton-x">
+                        <div class="boton-x-w">
+                            <i class="fas fa-times" style="color:#FFFFFF"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popupContent">
+                    <div class="icon">
+                        <div class="backGrd">                            
+                        </div>
+                        <div class="attention">
+                            <div class="union">
+                                
+                                <div class="rectangle2"></div>
+                                <div class="rectangle1"></div>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="text-boton">
+                        
+                        <div class="titleDescription">
+                            <h1>¡Cuidado!</h1>
+                            <p>No podrás volver atrás</p>
+                        </div>
+                        <div class="buttons">
+                            <a class="relleno">Borrar</a>
+                            <a >Cancelar</a>
+                            
+                        </div>
+                        
+                    </div>                  
+
+                </div>
+            </article>
+            <article id="boxSuccess" class=" box hide">
+                <div class="close">
+                    <div class="boton-x">
+                        <div class="boton-x-w">
+                            <i class="fas fa-times" style="color:#FFFFFF"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popupContent">
+                    <div class="icon">
+                        <div class="backGrdGreen">                            
+                        </div>
+                        <div class="attention">                            
+                                <i class="fas fa-check success"></i>                            
+                        </div>
+                       
+                    </div>
+                    <div class="text-boton">
+                        
+                        <div class="titleDescription">
+                            <h1>¡Vamos!</h1>
+                            <p>Todo ha salido bien :)</p>
+                        </div>
+                        <div class="buttons">
+                            <a class="relleno">Cerrar pestaña</a>
+                        </div>
+                        
+                    </div>
+            </article>
+            <article id="boxError" class=" box hide">
+                <div class="close">
+                    <div class="boton-x">
+                        <div class="boton-x-w">
+                            <i class="fas fa-times" style="color:#FFFFFF"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="popupContent">
+                    <div class="icon">
+                        <div class="backGrdRed">                            
+                        </div>
+                        <div class="attention">
+                            <i class="fas fa-times error"></i>
+                        </div>
+                       
+                    </div>
+                    <div class="text-boton">
+                        
+                        <div class="titleDescription">
+                            <h1>Upss</h1>
+                            <p>Algo ha pasado</p>
+                        </div>                                               
+                    </div>
+            </article>
+        </div>
+    </div>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
